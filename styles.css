@@ -9,7 +9,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(90deg, #000000 , #ffffff);
+    background: linear-gradient(90deg, #000000, #ffffff);
     overflow: hidden;
 }
 .clock {

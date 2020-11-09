@@ -1,0 +1,189 @@
+@media only screen and (width: 360px) and (height: 640px) {
+    .btn {
+        font-size: 20px;
+        top: 85%;
+        left: 50%;
+    }
+
+    .clock {   
+        width: 300px;
+        height: 300px;   
+
+    }
+
+    .num {
+        font-size: 1.2rem; 
+        padding: 10px;
+    }
+}
+    
+
+
+@media only screen and (width: 800px) and (height: 1280px) {
+    .btn {
+        font-size: 50px;
+        top: 85%;
+        left: 50%;
+    }
+
+    .clock {   
+        width: 500px;
+        height: 500px;   
+
+    }
+
+    .num {
+        font-size: 2rem; 
+        padding: 15px;
+    }
+}
+ 
+@media only screen and (width: 1280px) and (height: 800px) {
+    .btn {
+        font-size: 50px;
+    }
+
+    .clock {   
+        width: 500px;
+        height: 500px;   
+
+    }
+
+    .num {
+        font-size: 2rem; 
+        padding: 15px;
+    }
+}
+
+@media only screen and (width: 640px) and (height: 360px) {
+    .btn {
+        font-size: 20px;
+        top: 50%;
+        left: 15%;
+    }
+
+    .clock {   
+        width: 250px;
+        height: 250px;   
+
+    }
+
+    .num {
+        font-size: 1rem; 
+        padding: 8px;
+    }
+}
+
+@media only screen and (width: 414px) and (height: 736px) {
+    .btn {
+        font-size: 20px;
+        top: 85%;
+        left: 50%;
+    }
+
+    .clock {   
+        width: 400px;
+        height: 400px;   
+
+    }
+
+    .num {
+        font-size: 1.2rem; 
+        padding: 10px;
+    }
+}
+
+@media only screen and (width: 375px) and (height: 812px) {
+    .btn {
+        font-size: 20px;
+        top: 85%;
+        left: 50%;
+    }
+
+    .clock {   
+        width: 350px;
+        height: 350px;   
+
+    }
+
+    .num {
+        font-size: 1rem; 
+        padding: 15px;
+    }
+}
+
+@media only screen and (width: 768px) and (height: 1024px) {
+    .btn {
+        font-size: 50px;
+        top: 85%;
+        left: 50%;
+    }
+
+    .clock {   
+        width: 500px;
+        height: 500px;   
+
+    }
+
+    .num {
+        font-size: 2rem; 
+        padding: 15px;
+    }
+}
+
+@media only screen and (width: 450px) and (height: 600px) {
+    .btn {
+        font-size: 20px;
+        top: 90%;
+        left: 50%;
+    }
+
+    .clock {   
+        width: 350px;
+        height: 350px;   
+
+    }
+
+    .num {
+        font-size: 1rem; 
+        padding: 15px;
+    }
+}
+
+@media only screen and (width: 280px) and (height: 653px) {
+    .btn {
+        font-size: 20px;
+        top: 85%;
+        left: 50%;
+    }
+
+    .clock {   
+        width: 250px;
+        height: 250px;   
+
+    }
+
+    .num {
+        font-size: 1rem; 
+        padding: 15px;
+    }
+}
+
+@media only screen and (min-width: 1280px) and (min-height: 1280px) {
+    .btn {
+        font-size: 5vh;
+        top: 85%;
+        left: 50%;
+    }
+
+    .clock {   
+        width: 50vh;
+        height: 50vh;   
+
+    }
+
+    .num {
+        font-size: 3vh; 
+        padding: 15px;
+    }
+}

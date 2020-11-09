@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #000000 , #ffffff);
+    overflow: hidden;
+}
+.clock {
+    background: linear-gradient(90deg, #fff, #000000);
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px 15px  rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    
+}
+.clock:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(60deg, rgba(0, 0, 0, 0.2) 50%, rgba(255, 255, 255, 0.1));
+    position: absolute;
+}
+.clock:after {
+    width: 20px;
+    height: 20px;
+    content: '';
+    background: linear-gradient(45deg,#000000 30%,#fff);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid white;
+}
+.hand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+}
+.hand div {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sec {
+    height: 38%;
+    width: 2px;
+    background-color: black;
+}
+.min {
+    height: 32%;
+    width: 4px;
+    background-color: black;
+}
+.hour {
+    height: 25%;
+    width: 6px;
+    background-color: black;
+    
+}
+.num {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: Georgia;
+    padding: 18px;
+}
+
+.num1 {
+    transform: rotate(30deg);
+}
+.num2 {
+    transform: rotate(60deg);
+}
+.num3 {
+    transform: rotate(90deg);
+}
+.num4 {
+    transform: rotate(120deg);
+}
+.num5 {
+    transform: rotate(150deg);
+}
+.num6 {
+    transform: rotate(180deg);
+}
+.num7 {
+    transform: rotate(210deg);
+}
+.num8 {
+    transform: rotate(240deg);
+}
+.num9 {
+    transform: rotate(270deg);
+}
+.num10 {
+    transform: rotate(300deg);
+}
+.num11 {
+    transform: rotate(330deg);
+}
+/*--------- shaow  with number------------- */
+.num div {
+    
+    text-shadow: 2px 2px 20px rgb(255, 255, 255);
+    border-radius: 500px;
+    display: inline-block;
+}
+.num1 div {
+    transform: rotate(-30deg);
+    
+}
+.num2 div {
+    transform: rotate(-60deg);
+}
+.num3 div {
+    transform: rotate(-90deg);
+}
+.num4 div {
+    transform: rotate(-120deg);
+}
+.num5 div {
+    transform: rotate(-150deg);
+}
+.num6 div {
+    transform: rotate(-180deg);
+}
+.num7 div {
+    transform: rotate(-210deg);
+}
+.num8 div {
+    transform: rotate(-240deg);
+}
+.num9 div {
+    transform: rotate(-280deg);
+}
+.num10 div {
+    transform: rotate(-300deg);
+}
+.num11 div {
+    transform: rotate(-330deg);
+}
+
+/*----------------BUT TON------------------*/
+.btn {
+    background-color: #020202;
+    color: #fcfafa;
+    padding: 10px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-decoration: none;
+    font-size: 100px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#left-word {
+    color: #000;
+    background-color: whitesmoke;
+    
+}
+.btn div {
+    display: inline-block;
+}
+span:nth-child(1) {
+    position: absolute;
+    top:0;
+    left:0;
+    height:2px;
+    width: 100%;
+    background: linear-gradient(to left, #fcfcfc,#000000);
+    animation: moveRight 2s linear infinite ; 
+}
+@keyframes moveRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+span:nth-child(2) {
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width: 2px;
+    background: linear-gradient(to left, #fcfcfc,#000000);
+    animation: moveTop 2s linear infinite ; 
+}
+@keyframes moveTop {
+    0% {
+        transform: translatey(100%);
+    }
+    100% {
+        transform: translatey(-100%);
+    }
+}
+span:nth-child(3) {
+    position: absolute;
+    top:0;
+    right:0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(to left, #fcfcfc,#000000);
+    animation: moveBottom 2s linear infinite;
+}
+@keyframes moveBottom {
+    0% {
+        transform: translatey(-100%);
+    }
+    100% {
+        transform: translatey(100%);
+    }
+}
+span:nth-child(4) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to left, #fcfcfc,#000000);
+    animation: moveLeft 2s linear infinite;
+}
+@keyframes moveLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
